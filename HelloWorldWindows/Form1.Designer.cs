@@ -28,37 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnPush = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(46, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(565, 88);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lblTitle.Font = new System.Drawing.Font("바탕체", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTitle.Location = new System.Drawing.Point(52, 42);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(359, 93);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "헬로 월드?";
+            this.lblTitle.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // btnPush
+            // 
+            this.btnPush.BackColor = System.Drawing.Color.IndianRed;
+            this.btnPush.Font = new System.Drawing.Font("휴먼둥근헤드라인", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPush.ForeColor = System.Drawing.Color.Yellow;
+            this.btnPush.Location = new System.Drawing.Point(12, 138);
+            this.btnPush.Name = "btnPush";
+            this.btnPush.Size = new System.Drawing.Size(412, 101);
+            this.btnPush.TabIndex = 1;
+            this.btnPush.Text = "눌러주세요";
+            this.btnPush.UseVisualStyleBackColor = false;
+            this.btnPush.Click += new System.EventHandler(this.btnPush_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(192, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 12);
+            this.label2.TabIndex = 2;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 444);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(436, 251);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnPush);
+            this.Controls.Add(this.lblTitle);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "3211 양혜원";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnPush;
+        private System.Windows.Forms.Label label2;
     }
 }
 
