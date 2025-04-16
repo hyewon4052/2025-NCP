@@ -54,7 +54,7 @@ namespace HelloWorldWindows
 
             // 모달리스(Modeless) 창
             formAbout2.Text = "모달리스창";
-            formAbout2.ShowDialog();
+            formAbout2.Show();
         }
     }
 }
