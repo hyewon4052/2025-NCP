@@ -56,5 +56,15 @@ namespace HelloWorldWindows
             formAbout2.Text = "모달리스창";
             formAbout2.Show();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

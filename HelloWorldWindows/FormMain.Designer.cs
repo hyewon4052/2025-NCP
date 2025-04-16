@@ -36,7 +36,12 @@
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.프로그램정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -44,9 +49,9 @@
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblTitle.Font = new System.Drawing.Font("바탕체", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblTitle.Location = new System.Drawing.Point(52, 42);
+            this.lblTitle.Location = new System.Drawing.Point(16, 51);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(359, 93);
+            this.lblTitle.Size = new System.Drawing.Size(362, 93);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "헬로 월드?";
             this.lblTitle.Click += new System.EventHandler(this.label1_Click);
@@ -56,9 +61,9 @@
             this.btnPush.BackColor = System.Drawing.Color.IndianRed;
             this.btnPush.Font = new System.Drawing.Font("휴먼둥근헤드라인", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnPush.ForeColor = System.Drawing.Color.Yellow;
-            this.btnPush.Location = new System.Drawing.Point(12, 138);
+            this.btnPush.Location = new System.Drawing.Point(36, 147);
             this.btnPush.Name = "btnPush";
-            this.btnPush.Size = new System.Drawing.Size(412, 101);
+            this.btnPush.Size = new System.Drawing.Size(321, 195);
             this.btnPush.TabIndex = 1;
             this.btnPush.Text = "눌러주세요";
             this.btnPush.UseVisualStyleBackColor = false;
@@ -80,7 +85,7 @@
             this.도움말ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(436, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(910, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -95,7 +100,7 @@
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
@@ -114,15 +119,48 @@
             this.프로그램정보ToolStripMenuItem.Text = "프로그램 정보";
             this.프로그램정보ToolStripMenuItem.Click += new System.EventHandler(this.프로그램정보ToolStripMenuItem_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lblTitle);
+            this.groupBox2.Controls.Add(this.btnPush);
+            this.groupBox2.Font = new System.Drawing.Font("한컴 말랑말랑 Regular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox2.Location = new System.Drawing.Point(514, 28);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(384, 368);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "헬로월드 실습";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Font = new System.Drawing.Font("한컴 말랑말랑 Regular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 27);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(496, 369);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "메모장 실습";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(7, 35);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(483, 308);
+            this.textBox1.TabIndex = 0;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 251);
+            this.ClientSize = new System.Drawing.Size(910, 408);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnPush);
-            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.groupBox2);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
@@ -131,6 +169,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,6 +187,9 @@
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 프로그램정보ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 끝내기ToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
