@@ -4,9 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.IO;
 
 namespace HelloWorldWindows
 {
@@ -64,6 +68,28 @@ namespace HelloWorldWindows
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void 열기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "텍스트 문서 (*.txt)|*.txt|csv 파일 (*.csv)|*.csv|모든 파일 (*.*)|*.*";
+            DialogResult result = openFileDialog.ShowDialog();
+
+            switch(result)
+            {
+                case DialogResult.Cancel:
+                    return;
+                    break;
+                case DialogResult.OK:
+                    using(StreamReader sr = new StreamReader(openFileDialog.FileName))
+                    {
+                        textBox1.Text = sr.ReadToEnd();
+                        sr.Close();
+                    }
+                    break;
+            }
 
         }
     }
