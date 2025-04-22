@@ -19,11 +19,14 @@ namespace HelloWorldWindows
     {
 
         private static string OriginalText;
+        private const string DEFAULT_FILE_NAME = "제목없음";
+        private const string DEFAULT_FILE_FILTER = "텍스트 문서 (*.txt)|*.txt|csv 파일 (*.csv)|*.csv|모든 파일 (*.*)|*.*";
 
         public FormMain()
         {
             InitializeComponent();
             OriginalText = textBox1.Text;
+            lblFileName.Text = DEFAULT_FILE_NAME;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -77,7 +80,7 @@ namespace HelloWorldWindows
         private void 열기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "텍스트 문서 (*.txt)|*.txt|csv 파일 (*.csv)|*.csv|모든 파일 (*.*)|*.*";
+            openFileDialog.Filter = DEFAULT_FILE_FILTER;
             DialogResult result = openFileDialog.ShowDialog();
 
             switch(result)
@@ -114,7 +117,7 @@ namespace HelloWorldWindows
 
         private void 새로만들기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lblFileName.Text = "제목없음";
+            lblFileName.Text = DEFAULT_FILE_NAME;
             textBox1.Text = "글자를 입력해주세요.";
             OriginalText = textBox1.Text;
             lblTextChanged.Text = "";
@@ -122,10 +125,10 @@ namespace HelloWorldWindows
 
         private void 저장ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (lblFileName.Text == "제목없음")
+            if (lblFileName.Text == DEFAULT_FILE_NAME)
             {
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
-                saveFileDialog.Filter = "텍스트 문서 (*.txt)|*.txt|csv 파일 (*.csv)|*.csv|모든 파일 (*.*)|*.*";
+                saveFileDialog.Filter = DEFAULT_FILE_FILTER;
                 DialogResult result = saveFileDialog.ShowDialog();
 
                 switch (result)
@@ -150,7 +153,7 @@ namespace HelloWorldWindows
         private void 다른이름으로저장ToolStripMenuItem_Click(object sender, EventArgs e)
         {
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
-                saveFileDialog.Filter = "텍스트 문서 (*.txt)|*.txt|csv 파일 (*.csv)|*.csv|모든 파일 (*.*)|*.*";
+                saveFileDialog.Filter = DEFAULT_FILE_FILTER;
                 saveFileDialog.FileName = lblFileName.Text;
                 DialogResult result = saveFileDialog.ShowDialog();
 
