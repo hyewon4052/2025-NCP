@@ -83,6 +83,7 @@ namespace HelloWorldWindows
                     return;
                     break;
                 case DialogResult.OK:
+                    lblFileName.Text = openFileDialog.FileName;
                     using(StreamReader sr = new StreamReader(openFileDialog.FileName))
                     {
                         textBox1.Text = sr.ReadToEnd();
@@ -90,6 +91,16 @@ namespace HelloWorldWindows
                     }
                     break;
             }
+
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void lblFileName_Click(object sender, EventArgs e)
+        {
 
         }
     }
