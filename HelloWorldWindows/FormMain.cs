@@ -18,10 +18,12 @@ namespace HelloWorldWindows
     public partial class FormMain: Form
     {
 
+        private static string OriginalText;
 
         public FormMain()
         {
             InitializeComponent();
+            OriginalText = textBox1.Text;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -114,6 +116,8 @@ namespace HelloWorldWindows
         {
             lblFileName.Text = "제목없음";
             textBox1.Text = "글자를 입력해주세요.";
+            OriginalText = textBox1.Text;
+            lblTextChanged.Text = "";
         }
 
         private void 저장ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -137,6 +141,8 @@ namespace HelloWorldWindows
             using(StreamWriter sw =  new StreamWriter(lblFileName.Text))
             {
                 sw.WriteLine(textBox1.Text);
+                OriginalText = textBox1.Text;
+                lblTextChanged.Text = "";
                 sw.Close();
             }
         }
@@ -160,7 +166,21 @@ namespace HelloWorldWindows
             using (StreamWriter sw = new StreamWriter(lblFileName.Text))
             {
                 sw.WriteLine(textBox1.Text);
+                OriginalText = textBox1.Text;
+                lblTextChanged.Text = "";
                 sw.Close();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text != OriginalText)
+            {
+                lblTextChanged.Text = "🌹";
+            }
+            else
+            {
+                lblTextChanged.Text = "";
             }
         }
     }
