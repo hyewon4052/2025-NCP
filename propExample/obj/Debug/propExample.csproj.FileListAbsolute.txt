@@ -1,2 +1,7 @@
 C:\2024-NCS\propExample\obj\Debug\propExample.csproj.AssemblyReference.cache
 C:\2024-NCS\propExample\obj\Debug\propExample.csproj.CoreCompileInputs.cache
+C:\2024-NCS\propExample\bin\Debug\propExample.exe.config
+C:\2024-NCS\propExample\bin\Debug\propExample.exe
+C:\2024-NCS\propExample\bin\Debug\propExample.pdb
+C:\2024-NCS\propExample\obj\Debug\propExample.exe
+C:\2024-NCS\propExample\obj\Debug\propExample.pdb
