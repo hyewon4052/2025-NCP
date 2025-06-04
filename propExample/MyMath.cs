@@ -8,6 +8,6 @@ namespace propExample
 {
     class MyMath
     {
-        //public static const double PI = 3.141592;
+        public static double PI = 3.141592;
     }
 }

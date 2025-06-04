@@ -32,6 +32,9 @@ namespace propExample
             Console.WriteLine("세번 째 위치");
             Console.WriteLine(Sample.value);
 
+            //Math m = MyMath();
+        
+
 
 
             // Property 실습
@@ -39,6 +42,27 @@ namespace propExample
             box1.Width = -3;
             Console.WriteLine(box1.Width);
             Console.WriteLine(box1.Area);
+
+            // 값 복사
+            int a = 10;
+            int b = a;
+            b = 20;
+            Console.WriteLine(a);   // a와 b가 별개 변수
+
+            // 참조복사 
+            Test test = new Test();
+            test.value = 5;
+            Change(test);   // 레퍼런스를 넘김에 주의
+            Console.WriteLine(test.value);
+        }
+        
+        class Test
+        {
+            public int value = 10;
+        }
+        static void Change(Test input)  // 메인 메소드와 같은 위치. 레퍼런스를 매개변수로 받음
+        {
+            input.value = 20;
         }
     }
 }
