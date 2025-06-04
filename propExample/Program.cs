@@ -25,6 +25,15 @@ namespace propExample
             // 팩토리 메서드 패턴 ( 생성자에 private을 사용하는 경우 )
             Product p = Product.GetInstance("아아", 2940);
 
+            // 정적 생성자 예제
+            Console.WriteLine("첫번 째 위치");
+            Console.WriteLine("두번 째 위치");
+            Console.WriteLine(Sample.value);
+            Console.WriteLine("세번 째 위치");
+            Console.WriteLine(Sample.value);
+
+
+
             // Property 실습
             Box box1 = new Box(100, 200);
             box1.Width = -3;
