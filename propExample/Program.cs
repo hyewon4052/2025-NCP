@@ -54,6 +54,12 @@ namespace propExample
             test.value = 5;
             Change(test);   // 레퍼런스를 넘김에 주의
             Console.WriteLine(test.value);
+
+            Test testA = new Test();
+            Test testB = testA;         // A와 B는 같은 걸 가리킨다.
+            testA.value = 10;
+            testB.value = 20;
+            Console.WriteLine(testA.value);
         }
         
         class Test
