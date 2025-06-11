@@ -1,0 +1,7 @@
+C:\2024-NCS\PolyExample32\bin\Debug\PolyExample32.exe.config
+C:\2024-NCS\PolyExample32\bin\Debug\PolyExample32.exe
+C:\2024-NCS\PolyExample32\bin\Debug\PolyExample32.pdb
+C:\2024-NCS\PolyExample32\obj\Debug\PolyExample32.csproj.AssemblyReference.cache
+C:\2024-NCS\PolyExample32\obj\Debug\PolyExample32.csproj.CoreCompileInputs.cache
+C:\2024-NCS\PolyExample32\obj\Debug\PolyExample32.exe
+C:\2024-NCS\PolyExample32\obj\Debug\PolyExample32.pdb
