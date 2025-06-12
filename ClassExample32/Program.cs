@@ -43,8 +43,15 @@ namespace ClassExample32
             {
                 Console.WriteLine("Child (string input) : base(input)");
             }
+        }
+
+            public static int number = 10; // 가려진 부모 변수
             static void Main(string[] args)
             {
+                int number = 20; // 셰도잉 예
+                Console.WriteLine(number);
+                Console.WriteLine(Program.number);
+
                 Child childA = new Child();
                 Child childB = new Child("string");
                 Parent parent = new Parent();
@@ -55,6 +62,5 @@ namespace ClassExample32
                 Console.WriteLine(Parent.counter);
                 Console.WriteLine(Child.counter);
             }
-        }
     }
 }
