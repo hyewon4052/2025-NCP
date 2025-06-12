@@ -10,20 +10,23 @@ namespace PolyExample32
     {
         static void Main(string[] args)
         {
-            List <Dog> dogs= new List<Dog>() { new Dog(), new Dog(), new Dog() };
-            List<Cat> cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
-
-            foreach (var item in dogs) {
+            List<Animal> animals = new List<Animal>() {
+                new Dog(),new Cat(), new Cat(), new Dog(), new Dog(), new Cat() 
+            };
+            foreach (var item in animals) {
                 item.Eat();
                 item.Sleep();
-                item.Bark();
-            }
+                
+                if (item is Dog)
+                {
+                    ((Dog)item).Bark();
+                }
+                Cat cat = item as Cat;
+                if (cat != null)
+                {
+                    cat.Meow();
+                }
 
-            foreach (var item in cats)
-            {
-                item.Eat();
-                item.Sleep();
-                item.Meow();
             }
         }
     }
