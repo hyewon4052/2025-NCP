@@ -1,0 +1,7 @@
+C:\2024-NCS\ClassExample32\bin\Debug\ClassExample32.exe.config
+C:\2024-NCS\ClassExample32\bin\Debug\ClassExample32.exe
+C:\2024-NCS\ClassExample32\bin\Debug\ClassExample32.pdb
+C:\2024-NCS\ClassExample32\obj\Debug\ClassExample32.csproj.AssemblyReference.cache
+C:\2024-NCS\ClassExample32\obj\Debug\ClassExample32.csproj.CoreCompileInputs.cache
+C:\2024-NCS\ClassExample32\obj\Debug\ClassExample32.exe
+C:\2024-NCS\ClassExample32\obj\Debug\ClassExample32.pdb
