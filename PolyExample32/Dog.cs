@@ -8,6 +8,11 @@ namespace PolyExample32
 {
     class Dog : Animal
     {
+        public void TestB()
+        {
+            Protected();    // 상속된 자식에서는 protected 접근 가능
+            Public();
+        } 
 
         public int Color { get; set; }
 

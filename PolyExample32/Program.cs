@@ -8,6 +8,12 @@ namespace PolyExample32
 {
     internal class Program
     {
+        public void TestC()
+        {
+            Dog dog = new Dog();
+            dog.Public();
+
+        }
         static void Main(string[] args)
         {
             List<Animal> animals = new List<Animal>() {
