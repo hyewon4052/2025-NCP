@@ -1,0 +1,13 @@
+C:\2024-NCS\FortuneTeller\bin\Debug\FortuneTeller.exe.config
+C:\2024-NCS\FortuneTeller\bin\Debug\FortuneTeller.exe
+C:\2024-NCS\FortuneTeller\bin\Debug\FortuneTeller.pdb
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.csproj.AssemblyReference.cache
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.Form1.resources
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.FormAbout.resources
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.Properties.Resources.resources
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.csproj.GenerateResource.cache
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.csproj.CoreCompileInputs.cache
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.exe
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.pdb
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.exe.config
+C:\2024-NCS\FortuneTeller\obj\Debug\FortuneTeller.FormHistory.resources
