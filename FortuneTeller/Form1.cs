@@ -39,6 +39,13 @@ namespace FortuneTeller
             }
         }
 
+        private string GetFortune()
+        {
+            Random random = new Random();
+            int index = random.Next(0, results.Count);
+            return results[index];
+        }
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -87,6 +94,11 @@ namespace FortuneTeller
         {
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
+        }
+
+        private void btnResult_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
